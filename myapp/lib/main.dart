@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Text(
-            'Hello, Flutter!',
+            'Hello, OG welcome to Flutter!',
             style: TextStyle(fontSize: 24),
           ),
           const SizedBox(height: 20),
