@@ -5,14 +5,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Hello Flutter App'),
+          title: Text('Hello Flutter App'),
         ),
         body: MyHomePage(),
       ),
@@ -21,28 +19,28 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          const Text(
-            'Hello, OG welcome to Flutter!',
+          Text(
+            'Hello OG, get ready to learn more on Flutter!',
             style: TextStyle(fontSize: 24),
           ),
-          const SizedBox(height: 20),
+          SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
               print('Button Pressed!');
             },
-            child: const Text('Press Me Please'),
+            child: Text('Press Me Please'),
           ),
-          const SizedBox(height: 20),
-          Image.network(
-            'https://tinyurl.com/bdfd544u',
+          SizedBox(height: 20),
+          Flexible(
+            child: Image.network(
+              'https://tinyurl.com/bdfd544u',
+            ),
           ),
         ],
       ),
